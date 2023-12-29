@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA=Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p\Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b8167d789.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png.jpg" alt="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Suryaprakash</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!-------------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image2.img.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Currently a B.Tech student at KSRM Kadapa, 
+                    adept in HTML and CSS, with strong aptitude and reasoning skills. 
+                    Engaged in my first internship project, showcasing a learning attitude and enthusiasm for technology. 
+                   <br> As a team player, I embrace challenges with adaptability, 
+                    emphasizing professional growth and a future-oriented mindset.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('skills certified')">Skills Certified</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>HTML,CSS,Java Script,C,Python</li>
+                            <li><span>Soft Skills</span><br>Time Management,Hard Working,Team Working</li>
+                            <li><span>Sports-Achievements</span><br>Basket ball and Cesto Ball-national certificates</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills certified">
+                        <ul>
+                            <li><span>2023</span><br>I Participate soft-coded website and successfully completed a CodeSoft internship project utilizing HTML and CSS, showcasing my skills in web development.</li>
+                            <li><span>2022</span><br>I earned a HackerRank certificate in the Basics of Python, demonstrating a solid foundation and competency in the language.</li>
+                            <li><span>2021</span><br>I secured first place in the coding test at our college's CSI event, showcasing my proficiency and excellence in coding.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Studing KSRMCE Engineering College of kadapa </li>
+                            <li><span>2019-2021</span><br>SSBN Junior College of Anantapuram</li>
+                            <li><span>2019</span><br>Jnana Bharathi High School in Kalyandurg</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------services-------------->
+<div id="services>">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h1>Web Design</h1><br>
+                <p>Offering a range of services in my portfolio, including proficiency in HTML and CSS for web development.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h1>Coding Certificates</h1><br>
+                <p>Offering services backed by coding certificates, including HackerRank Basic Python and C, as well as CodeSoft HTML and CSS internship certification, showcasing a solid foundation in diverse programming languages and web development.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h1>Now Starts with App Design</h1><br>
+                <p>Venturing into app design, my repertoire now extends to crafting engaging and user-centric mobile experiences, blending coding expertise with a creative touch.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------contact------------->
+<div id="contact">
+    <id class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>219y1a0545@ksrmce.ac.in</p>
+                <p><i class="fa-solid fa-phone-volume"></i>9398170322</p>
+                <div class="social-icons">
+                   <a href="https://www.instagram.com/__surya_the_ball_handler/"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/ediga-surya-prakash-54842327b/"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://m.facebook.com/bookmarks/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <br>
+                <a href="surya.resume1.pdf.docx" download class="btn btn2">Download resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="Message" name= "Message" rows="6" placeholder="Your Message" required>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <br>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </id>
+    <div class="copyright">
+        <p>Hello, I'M @surya. <i class="fa-solid fa-heart"></i> this my first web design</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGyX1pY4_5a04CXZdc2bsE8ViH7-0r8nCsPztwv-G--cPU3-JDQAPfWxdoEaDAzngdGQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
